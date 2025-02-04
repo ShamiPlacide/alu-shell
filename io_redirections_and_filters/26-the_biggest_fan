@@ -1,0 +1,2 @@
+#!/bin/bash
+awk -F'\t' '{print $1}' > temp_file sort temp_file uniq -c temp_file sort -nr head -n 11
